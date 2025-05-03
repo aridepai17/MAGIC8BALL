@@ -12,7 +12,7 @@ A fun and interactive React-based web app that mimics the classic Magic 8 Ball t
 
 ## 🚀 Live Demo
 
- Try it out here [Magic 8 Ball](/https://magic-8-ball-ruddy.vercel.app/)
+ Try it out here [Magic 8 Ball](https://magic-8-ball-ruddy.vercel.app/)
 
 ## 🛠️ Built With
 
