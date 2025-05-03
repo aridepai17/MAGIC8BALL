@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 body {
   font-family: "Press Start 2P", cursive;
   padding: 0;
@@ -34,6 +36,7 @@ h1, h3 {
   font-family: "Press Start 2P", cursive;
   color: var(--charcoal);
   font-size: 25px;
+
   text-align: center;
 }
 
