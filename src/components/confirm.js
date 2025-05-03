@@ -21,8 +21,7 @@ const Confirm = () => {
                 {context.state.question}
             </div>
 
-            <div className = 'animate__animated animate__bounceIn animate__delay-1s'>
-                <hr/>
+            
                 <button className = 'btn' onClick = {goNext}>
                     Decide it
                 </button>
@@ -30,7 +29,6 @@ const Confirm = () => {
                     Ask Again
                 </button>
             </div>
-        </div>
     )
     
 }

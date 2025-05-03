@@ -16,8 +16,7 @@ const Result = () => {
                 {context.state.result}
             </div>
 
-            <div className='animate__animated animate__bounceIn animate__delay-1s'>
-                <hr />
+            
                 <button className='btn' onClick={context.reset}>
                     Start Over
                 </button>
@@ -25,7 +24,6 @@ const Result = () => {
                     Decide Again
                 </button>
             </div>
-        </div>
     );
 };
 
