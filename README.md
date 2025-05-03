@@ -1,4 +1,4 @@
-# 🎱 Magic 8 Ball
+# 🎱 MAGIC 8 BALL
 
 A fun and interactive React-based web app that mimics the classic Magic 8 Ball toy. Ask a question, click a button, and get a quirky, mysterious, or downright hilarious answer!
 
