@@ -1,7 +1,5 @@
 import { useRef, useState, useContext } from 'react';
 import { MyContext } from '../context';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Ensure toast styles are included
 
 const Initial = () => {
     const context = useContext(MyContext);
@@ -16,10 +14,8 @@ const Initial = () => {
         const value = textInput.current.value;
 
         if (value.length >= 40) {
-            toast.error('Your question is too long!', {
-                position: toast.POSITION.TOP_LEFT
-            });
-            return false; // Early exit on error
+            // Simply block too-long questions silently
+            return false;
         }
 
         context.question(value); // Store the question
@@ -47,7 +43,6 @@ const Initial = () => {
                     Next
                 </button>
             )}
-            <ToastContainer /> {/* Ensure ToastContainer is included */}
         </div>
     );
 };

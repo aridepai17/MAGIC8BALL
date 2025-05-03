@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// The list of possible results the magic 8-ball can return
 const list = [
     'Yes', 
     'No', 
@@ -42,61 +43,68 @@ const list = [
     'Better start praying'
 ];
 
+// Creating context
 const MyContext = React.createContext();
-class MyProvider extends Component{
 
+class MyProvider extends Component {
     state = {
         screen: 0,
         question: '',
         result: ''
-    }
+    };
 
+    // Go to specific screen
     handleGoTo = (value) => {
-        this.setState({screen: value});
-    }
+        this.setState({ screen: value });
+    };
 
+    // Handle the question input by the user
     handleQuestion = (value) => {
-        this.setState({question: value});
-    }
+        this.setState({ question: value });
+    };
 
+    // Generate a random result from the list
     getRandomValue = () => {
         return list[Math.floor(Math.random() * list.length)];
-    }
+    };
 
+    // Handle generating the result
     handleResult = () => {
         let rand = this.getRandomValue();
 
-        if(this.state.result !== ''){
-            while(rand === this.state.result){
+        // Prevent repeating the same result twice
+        if (this.state.result !== '') {
+            while (rand === this.state.result) {
                 rand = this.getRandomValue();
             }
         }
-        this.setState({result: rand})
-    }
 
+        // Update the result in state
+        this.setState({ result: rand });
+    };
 
+    // Reset all state values to their initial state
     handleReset = () => {
         this.setState({
             screen: 0,
             question: '',
             result: ''
-        })
-    }
+        });
+    };
 
-    render(){
-        return(
-            <>
-                <MyContext.Provider value = {{
+    render() {
+        return (
+            <MyContext.Provider
+                value={{
                     state: this.state,
                     goTo: this.handleGoTo,
                     question: this.handleQuestion,
                     result: this.handleResult,
                     reset: this.handleReset
-                }}>
-                    {this.props.children}
-
-                </MyContext.Provider>
-            </>
+                }}
+            >
+                {this.props.children}
+            </MyContext.Provider>
         );
     }
 }
