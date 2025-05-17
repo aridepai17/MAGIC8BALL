@@ -2,6 +2,8 @@
 
 A fun and interactive React-based web app that mimics the classic Magic 8 Ball toy. Ask a question, click a button, and get a quirky, mysterious, or downright hilarious answer!
 
+---
+
 ## ✨ Features
 
 - 🎤 Ask any question with at least 5 characters
@@ -10,9 +12,21 @@ A fun and interactive React-based web app that mimics the classic Magic 8 Ball t
 - 💫 Smooth screen transitions with animations
 - ⚛️ Clean state management using React Context API
 
+---
+
 ## 🚀 Live Demo
 
- Try it out here [Magic 8 Ball](https://magic-8-ball-ruddy.vercel.app/)
+👉 Try it out here: [Magic 8 Ball](https://magic-8-ball-ruddy.vercel.app/)
+
+---
+
+## 🖼️ Screenshots
+
+| Initial Page | Confirm Page | Result Page |
+|--------------|--------------|-------------|
+| ![Initial Page](./finalproductpics/initialpage.png) | ![Confirm Page](./finalproductpics/decidingpage.png) | ![Result Page](./finalproductpics/resultpage.png) |
+
+---
 
 ## 🛠️ Built With
 
@@ -21,9 +35,15 @@ A fun and interactive React-based web app that mimics the classic Magic 8 Ball t
 - React Transition Group
 - Animate.css
 
+---
+
 ## 🧭 How It Works
 
 1. Type your question (minimum 5 characters)
-2. Click "Next" to confirm
+2. Click **"Next"** to confirm
 3. Receive a random, non-repeating answer
-4. Either start over or ask the same question again for a different answer!
+4. Either **Start Over** or **Decide Again** for a fresh prediction!
+
+---
+
+> ✨ Built with curiosity, styled with pixel love, and served with fate.
