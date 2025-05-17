@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { MyContext } from '../context';
+import "../assets/App.css";
 
 
 const Confirm = () => {

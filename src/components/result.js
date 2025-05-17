@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { MyContext } from '../context';
+import "../assets/App.css";
 
 const Result = () => {
     const context = useContext(MyContext);
